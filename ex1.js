@@ -1,4 +1,4 @@
-var express = require(‘express’);
+var express = require('express');
 var router = express.Router();
 
 
@@ -12,11 +12,11 @@ function f(x, s){
 }
 
 
-router.post(‘/login/auth’, function(req, res) {
+router.post("/login/auth", function(req, res) {
     var u = req.body.username;
     var p = req.body.password;
 
-    var q = “SELECT * FROM users WHERE name = ‘” + u + “’ AND password =‘” + p + “’;“;
+    var q = "SELECT * FROM users WHERE name = '" + u + "' AND password ='" + p + "';";
 
     return f(z, q)
 });
