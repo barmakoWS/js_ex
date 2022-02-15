@@ -1,4 +1,4 @@
-
+var pgp = require(‘pg-promise’)();
 
 
 function f1(a, q){
